@@ -3,50 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanban</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <title>Kanban Diario</title>
 </head>
 <body>
+
+    <h1>Organizando de Tarefas</h1>
+
+    <button>Add Card</button>
+    <button>Delet Card</button>
 
     <div class="boards">
         <div class="board">
             <h3>Para Fazer</h3>
-            <div class="dropzone">
-                <div class="card">
+            <div class="dropzone" id="add">
+                <div id="Estudo da Plavra" class="card" draggable="true">
                     <div class="status"></div>
-                    <div class="content"></div>
+                    <div class="content"> Estudo da Plavra </div>
                 </div>
             </div>
-            <button>Add Cards</button>
         </div>
         <div class="board">
             <h3>Fazendo</h3>
             <div class="dropzone">
-                <div class="card">
+                <div id="Conferir Anotações" class="card" draggable="true">
                     <div class="status"></div>
-                    <div class="content"></div>
+                    <div class="content"> Conferir anotações </div>
                 </div>
             </div>
         </div>
         <div class="board">
             <h3>Com problemas</h3>
             <div class="dropzone">
-                <div class="card">
+                <div id="Criar Mapa Mental" class="card" draggable="true">
                     <div class="status"></div>
-                    <div class="content"></div>
+                    <div class="content"> Criar Mapa Mental </div>
                 </div>
             </div>
         </div>
         <div class="board">
             <h3>Concluido</h3>
             <div class="dropzone">
-                <div class="card">
+                <div id="Organizar Agenda" class="card" draggable="true">
                     <div class="status"></div>
-                    <div class="content"></div>
+                    <div class="content"> Organizar Agenda </div>
                 </div>
             </div>
-            <button>Delet Cards</button>
         </div>
     </div>
-    
+
+
 </body>
 </html>
