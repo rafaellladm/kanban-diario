@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
     <title>Kanban Diario</title>
 </head>
 <body>
+    <div class="header">
 
-    <h1>Organizando de Tarefas</h1>
+        <h1>Organizando de Tarefas</h1>
 
-    <button>Add Card</button>
-    <button>Delet Card</button>
+        <div class="button">
+
+            <button>Add Card</button>
+            <button>Delet Card</button>
+
+        </div>
+
+
+    </div>
 
     <div class="boards">
         <div class="board">
-            <h3>Para Fazer</h3>
+            <h3 id="fazer">Fazer</h3>
             <div class="dropzone" id="add">
                 <div id="Estudo da Plavra" class="card" draggable="true">
                     <div class="status"></div>
@@ -24,7 +34,7 @@
             </div>
         </div>
         <div class="board">
-            <h3>Fazendo</h3>
+            <h3 id="fazendo">Fazendo</h3>
             <div class="dropzone">
                 <div id="Conferir Anotações" class="card" draggable="true">
                     <div class="status"></div>
@@ -33,7 +43,7 @@
             </div>
         </div>
         <div class="board">
-            <h3>Com problemas</h3>
+            <h3 id="pendencias">Pendencias</h3>
             <div class="dropzone">
                 <div id="Criar Mapa Mental" class="card" draggable="true">
                     <div class="status"></div>
@@ -42,7 +52,7 @@
             </div>
         </div>
         <div class="board">
-            <h3>Concluido</h3>
+            <h3 id="feito">Feito</h3>
             <div class="dropzone">
                 <div id="Organizar Agenda" class="card" draggable="true">
                     <div class="status"></div>
