@@ -10,17 +10,28 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 10px 30px;
+    margin: 30px 0;
+    background-color: #71c4cf;
+}
+
+.header h1 {
+    margin-left: 20px;
 }
 
 .button {
+    display: flex;
     min-width: 300px;
 }
 
 .header button {
-
-    margin: 20px;
-    justify-content: center;
+    color: blue;
+    flex: 1;
+    margin: 25px 10px;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid gray;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .boards {
@@ -38,27 +49,45 @@ body {
 .board h3 {
     padding: 16px;
     margin: 0;
-    color: white;
-}
-
-#fazer {
-    background: greenyellow;
-}
-
-#fazendo {
-    background: darkorange;
-}
-
-#pendencias {
-    background: darkred;
-}
-
-#feito {
-    background: orchid;
 }
 
 .dropzone {
     padding: 16px;
     min-width: 270px;
     min-height: 150px;
+}
+
+.card {
+    padding: 16px;
+    box-shadow: 0 3px 3px -3px;
+    background-color: white;
+    width: 230px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.status {
+    width: 30px;
+    height: 8px;
+    background: red;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.status.green {
+    background: #23d2ac;
+}
+
+.status.blue {
+    background: #33adff;
+}
+
+.status.red {
+    background: red;
+}
+
+.status.orange {
+    background: orange;
 }
