@@ -1,11 +1,7 @@
-/** help */
-function log(message) {
-    console.log('> ' + message)
-}
-
-/** app */
 const cards = document.querySelectorAll('.card')
 const dropzones = document.querySelectorAll('.dropzone')
+const nightMode = document.querySelector('#night-mode')
+const bodyClas = document.querySelector('body')
 
 cards.forEach(card => {
     card.addEventListener('dragstart', dragstart)
@@ -57,3 +53,7 @@ function dragleave() {
 function drop() {
     this.classList.remove('over')
 }
+
+nightMode.addEventListener('click', () => {
+    bodyClas.classList.toggle('night-mode')
+})

@@ -2,11 +2,18 @@ html {
     font-family: 'Nunito';
 }
 
+/*  */
 body {
     background-color: white;
     color: black;
 }
 
+.night-mode {
+    background-color: #130f0d;
+    color: white;
+}
+
+/*  */
 .header {
     display: flex;
     justify-content: space-between;
@@ -14,9 +21,23 @@ body {
     background-color: #71c4cf;
 }
 
+.night-mode .header {
+    background: #141316;
+}
+
 .header h1 {
     color: white;
     margin-left: 20px;
+}
+
+.night-mode .header h1 {
+    color: #fd951fcc;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
 }
 
 .button {
@@ -24,8 +45,8 @@ body {
     min-width: 300px;
 }
 
+/*  */
 .header button {
-    color: black;
     flex: 1;
     margin: 25px 15px;
     background-color: #f5f5f5;
@@ -36,15 +57,26 @@ body {
     height: 30px;
 }
 
+.night-mode .header button {
+    color: white;
+    background-color: #fd951fcc;
+}
+
 .boards {
     display: flex;
     justify-content: space-between;
     margin: 10px 30px;
 }
 
+/*  */
 .board {
     background-color: #f5f5f5;
     border-radius: 4px;
+    border: 1px solid #fd951f11;
+}
+
+.night-mode .board {
+    background: #141316;
     border: 1px solid #fd951f11;
 }
 
@@ -53,15 +85,20 @@ body {
     margin: 0;
 }
 
+.night-mode .board h3 {
+    color: #fd951fcc;
+}
+
 .dropzone {
     padding: 16px;
     min-width: 270px;
     min-height: 200px;
 }
 
+/*  */
 .card {
     padding: 16px;
-    box-shadow: 0 3px 3px -3px;
+    box-shadow: 0 3px 3px -1px;
     background-color: white;
     width: 230px;
     margin: 20px 0;
@@ -70,10 +107,14 @@ body {
     font-size: 18px;
 }
 
+.night-mode .card {
+    background-color: #1a1a1c;
+    box-shadow: 0 3px 3px -1px #fd951fcc;
+}
+
 .status {
     width: 30px;
     height: 8px;
-    background: red;
     margin-bottom: 16px;
     border-radius: 8px;
 }
@@ -94,8 +135,13 @@ body {
     background: orange;
 }
 
+/*  */
 .highlight {
     background-color: #eeeeee;
+}
+
+.night-mode .highlight {
+    background-color: #fd951f08;
 }
 
 .card, .dropzone {
@@ -107,6 +153,11 @@ body {
     opacity: 0.3;
 }
 
+/*  */
 .over {
     background-color: #c0dde0;
+}
+
+.night-mode .over {
+    background-color: #4cd13711;
 }
