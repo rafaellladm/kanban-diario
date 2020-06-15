@@ -54,9 +54,9 @@ body {
 }
 
 .dropzone {
-    padding: 0 16px 16px 16px;
+    padding: 16px;
     min-width: 270px;
-    min-height: 150px;
+    min-height: 200px;
 }
 
 .card {
@@ -92,4 +92,21 @@ body {
 
 .status.orange {
     background: orange;
+}
+
+.highlight {
+    background-color: #eeeeee;
+}
+
+.card, .dropzone {
+    transition: 400ms;
+}
+
+.is-dragging {
+    cursor: move;
+    opacity: 0.3;
+}
+
+.over {
+    background-color: #c0dde0;
 }
