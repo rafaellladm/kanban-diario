@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
     <link href="" rel="stylesheet">
     <title>Kanban Diario</title>
 </head>
@@ -16,8 +17,8 @@
 
         <div class="button">
 
-            <button>Add Card</button>
-            <button>Delet Card</button>
+            <button class="add">Add Card</button>
+            <button class="del">Delet Card</button>
 
         </div>
 
@@ -59,6 +60,32 @@
                     <div class="content"> Organizar Agenda </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div id="modal-add" class="hide">
+        <div class="content">
+            <div class="header">
+                <h1>Criação dos Cards</h1>
+                <a href="#">X</a>
+            </div>
+            <form action="/index.html">
+                <div class="field">
+                    <label for="assignment">Tarefas</label>
+                    <input type="text" name="assignment">
+                </div>
+                <div class="field">
+                    <label for="priority">Prioridade</label>
+                    <select name="priority" id="">
+                        <option value="">Qual a Prioridade</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <button>OK</button>
+                </div>
+
+            </form>
+
         </div>
     </div>
 
