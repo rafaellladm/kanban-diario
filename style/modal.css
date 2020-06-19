@@ -1,0 +1,84 @@
+a {
+    text-decoration: none;
+}
+
+#modal-add {
+    background-color: #0e0a14ef;
+
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 400ms;
+}
+
+#modal-add.hide {
+    display: none;
+}
+
+#modal-add .header {
+    background: #141316;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#modal-add .header h1 {
+    color: #fd951fcc;
+}
+
+#modal-add .header a {
+    margin-right: 30px;
+    color: #fd951fcc;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#modal-add .content {
+    min-width: 500px;
+}
+
+#modal-add .field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 60px;
+}
+
+#modal-add form label {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 16px;
+
+    display: block;
+    margin-bottom: 8px;
+    color: #fd951fcc;
+}
+
+#modal-add .field input, object {
+    width: 250px;
+    height: 20px;
+}
+
+#modal-add .button {
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-add form button {
+    width: 45px;
+    height: 25px;
+    color: orange;
+    background: #fd951fcc;
+    border-radius: 30px;
+    border: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
