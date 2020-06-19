@@ -3,6 +3,7 @@ const dropzones = document.querySelectorAll('.dropzone')
 const nightMode = document.querySelector('#night-mode')
 const bodyClas = document.querySelector('body')
 
+
 cards.forEach(card => {
     card.addEventListener('dragstart', dragstart)
     card.addEventListener('drag', drag)
@@ -57,3 +58,41 @@ function drop() {
 nightMode.addEventListener('click', () => {
     bodyClas.classList.toggle('night-mode')
 })
+
+
+const priority = ['urgente', 'alta', 'normal', 'baixa']
+
+const inputTasks = document.querySelector('assignment')
+
+const dropZone = document.querySelector('#add')
+
+const buttonDel = document.querySelector('.del')
+const buttonOk = document.querySelector('.button button')
+
+
+const buttonAdd = document.querySelector('.add')
+const close = document.querySelector('.header a')
+const modal = document.querySelector('#modal-add')
+
+
+buttonAdd.addEventListener('click', () => {
+    modal.classList.remove('hide')
+})
+
+close.addEventListener('click', () => {
+    modal.classList.add('hide')
+})
+
+buttonOk.addEventListener('click', () => {
+
+})
+
+// function priorityBox() {
+//     const prioritySelect = document.querySelector('select[nome=priority]')
+
+//     for( const p of priority) {
+//         return prioritySelect.innerHTML += `<option value="${p}">${p}</option>`
+
+// }
+
+// priorityBox()
